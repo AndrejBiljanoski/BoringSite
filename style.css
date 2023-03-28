@@ -1,0 +1,68 @@
+body{
+    font-family: monospace;
+}
+form{
+    border: 1px solid black;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.input-group{
+    display: flex;
+    width: 50%;
+    margin: 10px auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.input-group > * {
+    flex: 1 1 0;
+}
+.input-field-group{
+    display: flex;
+    flex-direction: column;
+}
+.required-text{
+    font-family: monospace;
+    font-weight: 500;
+    color: red;
+    font-size: 10px;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.text-center{
+    text-align: center;
+}
+.submit-btn:hover{
+    cursor: pointer;
+}
+.submit-btn {
+    background-color: teal;
+    color: white;
+    border: 0;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform:uppercase;
+    font-family: monospace;
+}
+
+/* DIA INPUTS */
+.dia-input{
+    border-radius: 20px;
+    border: 0;
+    border-bottom: 2px solid gray;
+    padding-left: 8px;
+}
+.dia-input:focus{
+    outline: none;
+}
+.dia-input-valid{
+    border-bottom: 2px solid green!important;
+}
+.dia-input-invalid{
+    border-bottom: 2px solid red!important;
+}

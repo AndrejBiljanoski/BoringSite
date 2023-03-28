@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Boring Site</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIA</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="bg-secondary">
-    <h1 class="text-white my-5" style="text-align: center; font-family: fantasy;">
-      Nothing to see here, just another boring site...
-    </h1>
-    <div style="width: 50%; margin: 0 auto">
-      <img style="width: 100%" src="./boring.gif" alt="boring" />
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
+  <body>
+    <form action="" id="form">
+      <h1 class="text-center">Welcome to DIA</h1>
+      <div class="input-group">
+        <label for="email">Email</label>
+        <div class="input-field-group">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="dia-input required"
+            placeholder="Enter your email"
+          />
+          <p class="required-text hide">The email field is required.</p>
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <div class="input-field-group">
+          <input
+            type="password"
+            name="password"
+            id="password"
+            class="dia-input required"
+            placeholder="Enter your password"
+          />
+          <p class="required-text hide">The password field is required.</p>
+        </div>
+      </div>
+      <div class="input-group">
+        <button class="submit-btn" type="submit">Log In</button>
+      </div>
+    </form>
+    <script src="./script.js"></script>
   </body>
 </html>
